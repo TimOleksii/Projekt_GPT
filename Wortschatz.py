@@ -37,7 +37,7 @@ import random
 import requests
 
 # Настройки OpenRouter
-API_KEY = "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"
+API_KEY = st.secrets["API_KEY"] 
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 HEADERS = {
     "Authorization": f"Bearer {API_KEY}",
